@@ -1,0 +1,165 @@
+html, body, #root, #appCon {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#appCon {
+    background-color: #EDE7D9;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#headerCon {
+    height: 10%;
+    width:100%;
+    background-color: #EDE7D9;
+    display:flex;
+    justify-content: center;
+}
+
+#titleCon {
+    font-size: 180%;
+    width: 80%;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    color:#4B4237;
+}
+
+#titleText {
+    width:50%;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#linksAndCart {
+    display: flex;
+    width:50%;
+    justify-content: right;
+}
+
+#linkCon {
+    font-size: 80%;
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homeLink {
+    color:#4B4237;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+#shopLink {
+    color:#4B4237;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+#shoppingCartIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cartIcon {
+    font-size: 175%;
+    border-radius: 30px;
+    background-color:#EDE7D9;
+    color:#4B4237;
+}
+
+#cartCount {
+    font-size: 90%;
+    color:#4B4237;
+}
+
+#homeBodyCon {
+    display:flex;
+    justify-content: center;
+    height:90%;
+    background-color: #EDE7D9;
+}
+
+#halfWithColor {
+    height:100%;
+    width:40%;
+    display:flex;
+}
+
+#homeTextCon {
+    height: 75%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    color: #4B4237;
+    margin-top: 25%;
+    align-items: center;
+}
+
+#homeBigText {
+    font-size: 900%;
+    line-height: 95%;
+    text-align: center;
+}
+
+#homeSmallText {
+    margin-top: 5%;
+    font-size: 175%;
+    text-align: center;
+}
+
+#starbucks {
+    color: #D00000;
+}
+
+#halfWithPicture {
+    height:100%;
+    width:40%;
+    display:flex;
+    justify-content: center;
+}
+
+#homeImageCon {
+    height:100%;
+}
+
+#homepageImage {
+    height:99%;
+}
+
+#suppButt {
+    background-color: #EDE7D9;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5%;
+    font-size: 110%;
+}
