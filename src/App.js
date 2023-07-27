@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import ProductPage from "./components/ProductPage";
 

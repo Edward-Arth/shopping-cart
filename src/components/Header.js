@@ -1,8 +1,8 @@
 import React from "react";
 import ShoppingCart from "./ShoppingCart";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Header = (props) => {
+const Header = () => {
     return (
         <div id="headerCon">
             <div id="titleCon"><div id="titleText">Ironworks Fitness</div>

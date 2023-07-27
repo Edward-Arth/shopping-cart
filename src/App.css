@@ -163,3 +163,62 @@ a:hover {
     margin-top: 2.5%;
     font-size: 110%;
 }
+
+#shopBody {
+    display:flex;
+    background-color: #EDE7D9;
+}
+
+#shopSidebar {
+    min-width:175px;
+    margin-right: 5%;
+}
+
+#checkboxes {
+    display:flex;
+    flex-direction: column;
+    margin-left: 5%;
+    position:sticky;
+    top: 0;
+    margin-top: 10px;
+}
+
+.checkboxLabels {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 15%;
+    font-size:150%;
+}
+
+input.checkboxInputs {
+    transform:scale(1.5);
+}
+
+#shopMeat {
+    display:flex;
+}
+
+#productCon {
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.productDivs {
+    margin:10px;
+    transition: transform 0.5s ease-in-out 0s;
+}
+
+.productDivs:hover {
+    transform: scale(1.1);
+}
+
+.productPics {
+    height: 350px;
+}
+
+.productDesc {
+    display:flex;
+    justify-content: center;
+    font-size: 150%;
+}
