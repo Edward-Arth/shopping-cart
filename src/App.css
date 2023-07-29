@@ -10,6 +10,7 @@ body {
 #appCon {
     background-color: #EDE7D9;
     font-family: 'Bebas Neue', sans-serif;
+    position:relative;
 }
 
 #headerCon {
@@ -206,7 +207,8 @@ input.checkboxInputs {
 
 .productDivs {
     margin:10px;
-    transition: transform 0.5s ease-in-out 0s;
+    transition: transform 0.3s ease-in-out 0s;
+    position:relative;
 }
 
 .productDivs:hover {
@@ -221,4 +223,34 @@ input.checkboxInputs {
     display:flex;
     justify-content: center;
     font-size: 150%;
+}
+
+#addIcon {
+    position: absolute;
+    left: 50%;
+    top:40%;
+    transform: scale(15);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0s;
+}
+
+.productDivs:hover #addIcon {
+    opacity: 0.75;
+}
+
+.productDivs:active {
+  transform: translateY(10px);
+}
+
+#cartContainer {
+    position: absolute;
+    top:3%;
+    left:88%;
+}
+
+#cartAndCount {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 125%;
 }

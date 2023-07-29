@@ -1,5 +1,4 @@
 import React from "react";
-import ShoppingCart from "./ShoppingCart";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -10,7 +9,6 @@ const Header = () => {
                     <nav id="linkCon">
                         <Link to="/" id="homeLink">Home</Link>
                         <Link to="/shop" id="shopLink">Shop</Link>
-                        <ShoppingCart id="cartIcon"/>
                     </nav>
                 </div>
             </div>
