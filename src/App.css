@@ -165,6 +165,10 @@ a:hover {
     font-size: 110%;
 }
 
+#suppButt:hover {
+    transform:scale(1.1);
+}
+
 #shopBody {
     display:flex;
     background-color: #EDE7D9;
@@ -223,6 +227,11 @@ input.checkboxInputs {
     display:flex;
     justify-content: center;
     font-size: 150%;
+    flex-wrap: wrap;
+}
+
+.productMarg {
+    margin-right: 20px;
 }
 
 #addIcon {
@@ -242,15 +251,78 @@ input.checkboxInputs {
   transform: translateY(10px);
 }
 
-#cartContainer {
-    position: absolute;
-    top:3%;
-    left:88%;
-}
-
 #cartAndCount {
     display:flex;
     justify-content: center;
     align-items: center;
     font-size: 125%;
+    position: absolute;
+    top:3%;
+    left:83%;
+}
+
+#cartAndCount:hover {
+    transform: scale(1.1);
+}
+
+.cartProdPics {
+    width:100px;
+}
+
+#cartScreen {
+    position: fixed;
+    top:0%;
+    height:100%;
+    width:100%;
+    display:none;
+}
+
+#cartClickOff {
+    height:100%;
+    width:70%;
+    background-color: #EDE7D9;
+    opacity: 0.3;
+}
+
+#cartProductCon {
+    background-color: #EDE7D9;
+    height:100%;
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.cartProductDivs {
+    display:flex;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15px;
+    justify-content: space-between
+}
+
+#cartTitle {
+    font-size: 400%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cartProdText {
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.cartProdName {
+    font-size: 150%;
+}
+
+.cartProdQuant {
+    display:flex;
+    align-items: center;
+}
+
+#quantText {
+    margin-left: 5px;
 }

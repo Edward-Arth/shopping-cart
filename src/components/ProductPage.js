@@ -15,17 +15,17 @@ import { AiOutlinePlusCircle } from "react-icons/ai";
 
 const ProductPage = ({ addToCart }) => {
     const allProducts = [
-        {productName: "Barbell", image: barbell, category: "equipment"}, 
-        {productName: "Dumbbell Set", image: dumbbells, category: "equipment"}, 
-        {productName: "Kettlebell Set", image: kettlebells, category: "equipment"}, 
-        {productName: "Squat Rack", image: squatRack, category: "equipment"},
-        {productName: "Barbell Plate Set", image: plates, category: "equipment"}, 
-        {productName: "Compression Set (Black)", image: compression, category: "clothes"}, 
-        {productName: "Athlete Set (Pink)", image: redSet, category: "clothes"}, 
-        {productName: "Signature Lifting Belt", image: belt, category: "clothes"}, 
-        {productName: "Creatine Monohydrate", image: creatine, category: "supplements"}, 
-        {productName: "Ginger Wellness Booster", image: ginger, category: "supplements"}, 
-        {productName: "Ironworks X Starbucks Preworkout", image: preworkout, category: "supplements"}
+        {productName: "Barbell", image: barbell, category: "equipment", number: 1, price: 74.95}, 
+        {productName: "Dumbbell Set", image: dumbbells, category: "equipment", number: 1, price: 150.00}, 
+        {productName: "Kettlebell Set", image: kettlebells, category: "equipment", number: 1, price: 263.00}, 
+        {productName: "Squat Rack", image: squatRack, category: "equipment", number: 1, price: 505.00},
+        {productName: "Barbell Plate Set", image: plates, category: "equipment", number: 1, price: 374.99}, 
+        {productName: "Compression Set (Black)", image: compression, category: "clothes", number: 1, price: 86.35}, 
+        {productName: "Athlete Set (Pink)", image: redSet, category: "clothes", number: 1, price: 75.00}, 
+        {productName: "Signature Lifting Belt", image: belt, category: "clothes", number: 1, price: 113.25}, 
+        {productName: "Creatine Monohydrate", image: creatine, category: "supplements", number: 1, price: 55.00}, 
+        {productName: "Ginger Wellness Booster", image: ginger, category: "supplements", number: 1, price: 69.99}, 
+        {productName: "Ironworks X Starbucks Preworkout", image: preworkout, category: "supplements", number: 1, price: 85.59}
     ];
     
     const [selectedCategory, setSelectedCategory] = useState("All");
@@ -106,7 +106,7 @@ const ProductPage = ({ addToCart }) => {
             <div id="shopMeat">
                 <div id="productCon">
                     {filteredProducts.map((product, index) => {
-                        return <div className="productDivs" key={product.productName} onClick={() => handleProducts({product})}><img src={product.image} alt={`Product ${index}`} className="productPics"/><AiOutlinePlusCircle id="addIcon"/><div className="productDesc">{product.productName}</div></div>
+                        return <div className="productDivs" key={product.productName} onClick={() => handleProducts({product})}><img src={product.image} alt={`Product ${index}`} className="productPics"/><AiOutlinePlusCircle id="addIcon"/><div className="productDesc"><span className="productMarg">{product.productName}</span><span>${product.price}</span></div></div>
                     })}
                 </div>
             </div>
