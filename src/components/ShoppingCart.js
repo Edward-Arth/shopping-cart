@@ -41,7 +41,7 @@ const ShoppingCart = ({ cartProducts = [], cartQuantity, addFromCart, removeFrom
                             <img src={product.product.image} alt={`Product ${index}`} className="cartProdPics"/>
                             <div className="cartProdText">
                                 <div className="cartProdName">{product.product.productName}</div>
-                                <div className="cartProdQuant"><AiOutlineMinus onClick={() => removeFromCart({product})}/><AiOutlinePlus onClick={() => addFromCart({product})}/><span id="quantText">Quantity: {product.product.number}</span></div>
+                                <div className="cartProdQuant"><AiOutlineMinus className="myCartIcons" onClick={() => removeFromCart({product})}/><AiOutlinePlus className="myCartIcons" onClick={() => addFromCart({product})}/><span id="quantText">Quantity: {product.product.number}</span></div>
                                 <div className="cartProdPrice">${(Math.round((product.product.number * product.product.price) * 100) / 100).toFixed(2)}</div>
                             </div>
                             </div>

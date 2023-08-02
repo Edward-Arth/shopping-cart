@@ -91,6 +91,8 @@ input.checkboxInputs {
     }
     .productDesc {
         font-size: 80%;
+        max-width: 100px;
+        text-align: center;
     }
     .plusCheckIcons {
         transform:scale(5);

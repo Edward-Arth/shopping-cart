@@ -105,6 +105,12 @@
         align-items: baseline;
         margin-right: 20px;
     }
+    #suppButt {
+        height:25px;
+    }
+    #shopLink {
+        margin:0;
+    }
 }
 
 #suppButt {
