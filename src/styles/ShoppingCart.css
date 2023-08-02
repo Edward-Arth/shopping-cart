@@ -114,6 +114,7 @@
     #cartScreen {
         display:flex;
         flex-direction: column;
+        display:none;
     }
     #cartProductCon {
         width:100%;
