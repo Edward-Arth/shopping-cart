@@ -1,0 +1,72 @@
+#headerCon {
+    background-color: #EDE7D9;
+    height:5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+
+#titleCon {
+    color:#4B4237;
+    text-align: center;
+    flex:0.75;
+    margin-left: 22.2%;
+    font-size:200%;
+}
+
+#linksAndCart {
+    display:flex;
+    align-items: center;
+    flex:0.3;
+}
+
+#linkCon {
+    font-size: 150%;
+}
+
+#cartIcon {
+    font-size:175%;
+    color: #4B4237;
+}
+
+#cartCount {
+    color: #4B4237;
+}
+
+#homeLink, #shopLink {
+    margin-right: 15px;
+    color: #4B4237;
+}
+
+#cartAndCount {
+    display:flex;
+    align-items: center;
+    font-size: 125%;
+}
+
+#cartAndCount:hover {
+    transform: scale(1.1);
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+@media (max-width:400px) {
+    #titleCon {
+        font-size: 150%;
+        text-align: left;
+    }
+    #linkCon, #cartCount {
+        font-size: 90%;
+    }
+    #cartIcon {
+        font-size:90%;
+    }
+}

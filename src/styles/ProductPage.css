@@ -1,0 +1,110 @@
+#shopBody {
+    display:flex;
+    background-color: #EDE7D9;
+}
+
+#shopSidebar {
+    min-width:175px;
+    margin-right: 5%;
+}
+
+#checkboxes {
+    display:flex;
+    flex-direction: column;
+    margin-left: 5%;
+    position:sticky;
+    top: 0;
+    margin-top: 10px;
+}
+
+.checkboxLabels {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 15%;
+    font-size:150%;
+}
+
+input.checkboxInputs {
+    transform:scale(1.5);
+}
+
+#shopMeat {
+    display:flex;
+}
+
+#productCon {
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.productDivs {
+    margin:10px;
+    transition: transform 0.3s ease-in-out 0s;
+    position:relative;
+}
+
+.productDivs:hover {
+    transform: scale(1.1);
+}
+
+.productPics {
+    height: 350px;
+}
+
+.productDesc {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 150%;
+    flex-wrap: wrap;
+}
+
+.plusCheckIcons {
+    position: absolute;
+    left: 50%;
+    top:40%;
+    transform: scale(15);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0s;
+}
+
+.productDivs:hover .plusCheckIcons {
+    opacity: 0.75;
+}
+
+.productDivs:active {
+  transform: translateY(10px);
+}
+
+.productDivs:active #cartAndCount {
+    transform: scale(1.5);
+}
+
+.cartProdPics {
+    width:100px;
+}
+
+@media (max-width: 580px) {
+    .productPics {
+        height:100px;
+    }
+    .productDesc {
+        font-size: 80%;
+    }
+    .plusCheckIcons {
+        transform:scale(5);
+        left: 45%;
+        top:30%;
+    }
+    #shopSidebar {
+        min-width:100px;
+    }
+    .checkboxLabels {
+        font-size:100%;
+    }
+    
+    input.checkboxInputs {
+        transform:scale(1);
+    }
+}

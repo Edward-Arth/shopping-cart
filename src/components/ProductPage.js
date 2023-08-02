@@ -11,6 +11,7 @@ import preworkout from "../images/preworkout.jpg";
 import redSet from "../images/redSet.jpg";
 import squatRack from "../images/squatRack.jpg";
 import { AiOutlinePlusCircle } from "react-icons/ai";
+import { AiOutlineCheckCircle } from "react-icons/ai";
 
 
 const ProductPage = ({ addToCart }) => {
@@ -29,6 +30,14 @@ const ProductPage = ({ addToCart }) => {
     ];
     
     const [selectedCategory, setSelectedCategory] = useState("All");
+    const [showCheck, setShowCheck] = useState(false);
+
+    const handleProdClick = () => {
+        setShowCheck(true);
+        setTimeout(() => {
+            setShowCheck(false);
+        }, 750);
+    };
 
     useEffect(() => {
         const getUrlCat = new URLSearchParams(window.location.search);
@@ -106,7 +115,14 @@ const ProductPage = ({ addToCart }) => {
             <div id="shopMeat">
                 <div id="productCon">
                     {filteredProducts.map((product, index) => {
-                        return <div className="productDivs" key={product.productName} onClick={() => handleProducts({product})}><img src={product.image} alt={`Product ${index}`} className="productPics"/><AiOutlinePlusCircle id="addIcon"/><div className="productDesc"><span className="productMarg">{product.productName}</span><span>${product.price}</span></div></div>
+                        return <div className="productDivs" key={product.productName} onClick={() => handleProducts({product})}>
+                            <img src={product.image} alt={`Product ${index}`} className="productPics"/>
+                            <div id="iconIndicator" onClick={handleProdClick}>{showCheck ? (<AiOutlineCheckCircle className="plusCheckIcons"/>) : (<AiOutlinePlusCircle className="plusCheckIcons"/>)}</div>
+                            <div className="productDesc">
+                                <div className="productName">{product.productName}</div>
+                                <div className="productPrice">${product.price.toFixed(2)}</div>
+                            </div>
+                        </div>
                     })}
                 </div>
             </div>

@@ -1,0 +1,125 @@
+#homeBodyCon {
+    display:flex;
+    justify-content: center;
+    background-color: #EDE7D9;
+    height:90%;
+}
+
+#halfWithColor {
+    margin-left:15%;
+    background-color: #EDE7D9;
+    display:flex;
+    align-items: center;
+}
+
+#homeTextCon {
+    display:flex;
+    flex-direction: column;
+    color: #4B4237;
+    margin-right:5%;
+    align-items: center;
+}
+
+#homeBigText {
+    font-size: 900%;
+    line-height: 95%;
+    text-align: center;
+}
+
+#homeSmallText {
+    margin-top: 5%;
+    font-size: 175%;
+    text-align: center;
+}
+
+#starbucks {
+    color: #D00000;
+}
+
+#halfWithPicture {
+    display:flex;
+    justify-content: center;
+    margin-right: 15%;
+    background-color: #EDE7D9;
+    height:100%;
+}
+
+#homeImageCon {
+    height:100%;
+    display:flex;
+}
+
+#homepageImage {
+    height:99%;
+}
+
+@media (max-width:1000px) {
+    #homeImageCon {
+        align-items: baseline;
+    }
+    #homepageImage {
+        height:725px;
+    }
+    #homeTextCon {
+        font-size: 110%;
+    }
+    #halfWithColor {
+        align-items: baseline;
+        margin-right: 20px;
+    }
+    #homeBodyCon {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:580px) {
+    #homeImageCon {
+        align-items: baseline;
+    }
+    #homepageImage {
+        height:350px;
+    }
+    #homeTextCon {
+        font-size: 55%;
+    }
+    #halfWithColor {
+        align-items: baseline;
+        margin-right: 20px;
+    }
+    #homeBodyCon {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:400px) {
+    #homeImageCon {
+        align-items: baseline;
+    }
+    #homepageImage {
+        height:325px;
+    }
+    #homeTextCon {
+        font-size: 45%;
+    }
+    #halfWithColor {
+        align-items: baseline;
+        margin-right: 20px;
+    }
+}
+
+#suppButt {
+    background-color: #EDE7D9;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5%;
+    font-size: 110%;
+}
+
+#suppButt:hover {
+    transform:scale(1.1);
+}

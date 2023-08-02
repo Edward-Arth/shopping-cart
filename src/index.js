@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './App.css';
+import './styles/App.css';
+import './styles/Header.css'
+import './styles/Homepage.css'
+import './styles/ProductPage.css'
+import './styles/ShoppingCart.css'
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
