@@ -1,0 +1,18 @@
+.featureSection {
+    margin-top: 75px;
+    padding-bottom: 75px;
+    max-width: 1200px;
+}
+
+.carouselImage {
+    max-height:800px;
+    width:auto;
+}
+
+.visually-hidden {
+    display:none;
+}
+
+.carouselCaps {
+    opacity: .9;
+}
