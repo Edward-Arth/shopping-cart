@@ -2,10 +2,15 @@ body {
     padding: 0;
     margin: 0;
     background-color: #EDE7D9;
+    position:absolute;
 }
 
 #appCon {
     background-color: #EDE7D9;
     font-family: 'Bebas Neue', sans-serif;
     position:relative;
+}
+
+.footerLogos {
+    font-size: 200%;
 }

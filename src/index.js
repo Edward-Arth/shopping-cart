@@ -6,6 +6,7 @@ import './styles/Homepage.css'
 import './styles/ProductPage.css'
 import './styles/ShoppingCart.css'
 import './styles/Carousel.css'
+import './styles/Reviews.css'
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 

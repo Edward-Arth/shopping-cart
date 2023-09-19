@@ -1,12 +1,13 @@
 .featureSection {
     margin-top: 75px;
     padding-bottom: 75px;
-    max-width: 1200px;
+    max-width: 1250px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .carouselImage {
-    max-height:800px;
-    width:auto;
+    height:auto;
+    width:100%;
 }
 
 .visually-hidden {
@@ -15,4 +16,5 @@
 
 .carouselCaps {
     opacity: .9;
+    font-size: 100%;
 }

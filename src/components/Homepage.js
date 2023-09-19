@@ -5,6 +5,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import pushups from '../images/pushups.jpg';
 import smiling from '../images/smiling.jpg';
 import pressing from '../images/pressing.jpg';
+import Review from "./Review";
+import Footer from "./Footer";
 
 const Homepage = () => {
     return (
@@ -31,17 +33,22 @@ const Homepage = () => {
                     </Carousel.Item>
                     <Carousel.Item>
                         <img className="carouselImage" src={smiling} alt="Second slide"/>
-                        <Carousel.Caption className="carouselCaps"><h1>Exclusively organic ingredients</h1></Carousel.Caption>
+                        <Carousel.Caption className="carouselCaps"><h1>Exclusively organic supplements</h1></Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img className="carouselImage" src={pressing} alt="Third slide"/>
-                        <Carousel.Caption className="carouselCaps"><h1>Singleminded in improving client performance</h1></Carousel.Caption>
+                        <Carousel.Caption className="carouselCaps"><h1>Single minded in improving client performance</h1></Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <div className="reviewCon">
-
+            <div className="testimonialCon">
+                <div className="reviewTitle">Testimonials</div>
+                <Review author={"Leif Erikson"} content={'"The preworkout gave me a sick pump. Highly recommend it."'}/>
+                <Review author={"Arnold Schwarzenegger"} content={'"I could have never been the terminator without Ironworks Fitness."'}/>
+                <Review author={"Ronnie Coleman"} content={'"The most reliable organization in fitness today."'}/>
+                <Review author={"Bob Smith"} content={'"Kitted out my entire home gym with Ironworks gear. Top notch!"'}/>
             </div>
+            <Footer/>
         </div>
     );
 };
