@@ -12,13 +12,13 @@
     height:100%;
     width:70%;
     background-color: #EDE7D9;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 #cartProductCon {
     background-color: #EDE7D9;
     height:100%;
-    width:40%;
+    width:35%;
     display:flex;
     flex-direction: column;
     overflow: auto;
@@ -27,8 +27,8 @@
 .cartProductDivs {
     display:flex;
     align-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 15px;
     justify-content: space-between;
 }
@@ -118,17 +118,17 @@
     }
     #cartProductCon {
         width:100%;
-        height:50%;
+        height:60%;
     }
     #cartClickOff {
         width:100%;
-        height:50%;
+        height:40%;
     }
     .cartProductDivs {
         margin-left: 2%;
         margin-right: 2%;
     }
     .myCartIcons {
-        font-size: 25px;
+        font-size: 20px;
     }
   }

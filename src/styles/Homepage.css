@@ -74,10 +74,42 @@
 }
 
 #suppButt:hover {
-    transform:scale(1.1);
+    transform:scale(1.03);
     cursor: pointer;
 }
 
-@media (max-width: 1025px) {
-    
+@media (max-width: 750px) {
+    #homeSmallText {
+        font-size: 2.5vw;
+    }
+    #suppButt {
+        padding:5px;
+        margin-top: 15px;
+        font-size: 2.5vmin;
+    }
+}
+
+@media (max-width: 500px) {
+    #homeSmallText {
+        font-size: 100%;
+    }
+    #suppButt {
+        padding:5px;
+        margin-top: 15px;
+        font-size: 100%;
+    }
+    .heroCon {
+        height:70vh;
+    }
+    #homeBigText {
+        font-size: 13vw;
+    }
+    #halfWithPicture {
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    #halfWithColor {
+        padding-left: 0;
+        padding-right: 5px;
+    }
 }

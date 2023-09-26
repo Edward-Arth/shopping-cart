@@ -58,15 +58,21 @@ a:hover {
     font-weight: bolder;
 }
 
-@media (max-width:400px) {
+@media (max-width:550px) {
+    #headerCon {
+        padding:5px;
+    }
     #titleCon {
-        font-size: 150%;
+        margin-left: 0;
         text-align: left;
     }
-    #linkCon, #cartCount {
-        font-size: 90%;
+}
+
+@media (max-width:400px) {
+    #titleCon {
+        font-size:120%;
     }
-    #cartIcon {
-        font-size:90%;
+    #linksAndCart {
+        font-size: 65%;
     }
 }

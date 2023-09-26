@@ -27,3 +27,16 @@
     font-size: 115%;
     font-family: 'Roboto', sans-serif;
 }
+
+@media only screen and (max-width: 500px) {
+    .reviewTitle {
+        font-size: 300%;
+    }
+    .starsCon, .authorCon {
+        font-size: 100%;
+    }
+    .reviewContent {
+        font-size: 85%;
+        padding:10px;
+    }
+}

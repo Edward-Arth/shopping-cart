@@ -1,17 +1,20 @@
 #shopBody {
     display:flex;
     background-color: #EDE7D9;
+    font-family: 'Roboto', sans-serif;
 }
 
 #shopSidebar {
-    min-width:175px;
-    margin-right: 5%;
+    display:flex;
+    justify-content: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: fit-content;
 }
 
 #checkboxes {
     display:flex;
     flex-direction: column;
-    margin-left: 5%;
     position:sticky;
     top: 0;
     margin-top: 10px;
@@ -21,7 +24,11 @@
     display:flex;
     justify-content: space-between;
     margin-bottom: 15%;
-    font-size:150%;
+    font-size:110%;
+}
+
+.checkboxInputs {
+    margin-left: 40px;
 }
 
 input.checkboxInputs {
@@ -42,6 +49,7 @@ input.checkboxInputs {
     margin:10px;
     transition: transform 0.3s ease-in-out 0s;
     position:relative;
+    width:20%;
 }
 
 .productDivs:hover {
@@ -49,24 +57,17 @@ input.checkboxInputs {
 }
 
 .productPics {
-    height: 350px;
+    width:100%;
+    height:auto;
 }
 
 .productDesc {
     display:flex;
     flex-direction: column;
     align-items: center;
-    font-size: 150%;
+    font-size: 100%;
     flex-wrap: wrap;
-}
-
-.plusCheckIcons {
-    position: absolute;
-    left: 50%;
-    top:40%;
-    transform: scale(15);
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out 0s;
+    text-align: center;
 }
 
 .productDivs:hover .plusCheckIcons {
@@ -85,27 +86,31 @@ input.checkboxInputs {
     width:100px;
 }
 
-@media (max-width: 580px) {
-    .productPics {
-        height:100px;
+@media only screen and (max-width: 900px) {
+    .productDivs {
+        width: 40%;
     }
-    .productDesc {
-        font-size: 80%;
-        max-width: 100px;
-        text-align: center;
-    }
-    .plusCheckIcons {
-        transform:scale(5);
-        left: 45%;
-        top:30%;
-    }
-    #shopSidebar {
-        min-width:100px;
+    .checkboxInputs {
+        margin-left: 15px;
     }
     .checkboxLabels {
-        font-size:100%;
+        font-size: 100%;
     }
-    
+}
+
+@media only screen and (max-width: 425px) {
+    .productDivs {
+        width: 35%;
+    }
+    .productDesc {
+        font-size: 70%;
+    }
+    .checkboxInputs {
+        margin-left: 10px;
+    }
+    .checkboxLabels {
+        font-size: 80%;
+    }
     input.checkboxInputs {
         transform:scale(1);
     }

@@ -27,15 +27,15 @@ const Homepage = () => {
             </div>
             <div className="featureSection">
                 <Carousel className="carouselCon">
-                    <Carousel.Item>
+                    <Carousel.Item interval={3000}>
                         <img className="carouselImage" src={pushups} alt="First slide"/>
                         <Carousel.Caption className="carouselCaps"><h1>Equipment developed and tested by experts</h1></Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    <Carousel.Item interval={3000}>
                         <img className="carouselImage" src={smiling} alt="Second slide"/>
                         <Carousel.Caption className="carouselCaps"><h1>Exclusively organic supplements</h1></Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    <Carousel.Item interval={3000}>
                         <img className="carouselImage" src={pressing} alt="Third slide"/>
                         <Carousel.Caption className="carouselCaps"><h1>Single minded in improving client performance</h1></Carousel.Caption>
                     </Carousel.Item>

@@ -5,7 +5,7 @@ import ShoppingCart from "./ShoppingCart";
 const Header = ({ cartProducts = [], cartQuantity, addFromCart, removeFromCart, cartTotal }) => {
     return (
         <div id="headerCon">
-            <div id="titleCon"><div id="titleText">Ironworks Fitness</div></div>
+            <div id="titleCon"><Link to="/" className="brandLink"><div id="titleText">Ironworks Fitness</div></Link></div>
             <div id="linksAndCart">
                 <div id="linkNavCon" className="sideHeader">
                         <nav id="linkCon">

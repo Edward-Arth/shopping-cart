@@ -1,7 +1,7 @@
 .featureSection {
     margin-top: 75px;
     padding-bottom: 75px;
-    max-width: 1250px;
+    max-width: 65%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -17,4 +17,16 @@
 .carouselCaps {
     opacity: .9;
     font-size: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .featureSection {
+        max-width: 95%;
+    }
 }

@@ -9,7 +9,7 @@ const Footer = () => {
                 <Navbar.Brand className='footerLogos' href='https://github.com/Edward-Arth'>
                     <AiOutlineGithub/>
                 </Navbar.Brand>
-                <Navbar.Brand className='footerLogos' href='www.linkedin.com/in/edward-strahlendorf'>
+                <Navbar.Brand className='footerLogos' href='https://linkedin.com/in/edward-strahlendorf'>
                     <AiOutlineLinkedin/>
                 </Navbar.Brand> 
             </Navbar>

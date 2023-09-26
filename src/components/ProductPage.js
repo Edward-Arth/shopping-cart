@@ -10,7 +10,6 @@ import plates from "../images/plates.jpg";
 import preworkout from "../images/preworkout.jpg";
 import redSet from "../images/redSet.jpg";
 import squatRack from "../images/squatRack.jpg";
-import { AiOutlinePlusCircle } from "react-icons/ai";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
 
@@ -21,7 +20,7 @@ const ProductPage = ({ addToCart }) => {
         {productName: "Kettlebell Set", image: kettlebells, category: "equipment", number: 1, price: 263.00}, 
         {productName: "Squat Rack", image: squatRack, category: "equipment", number: 1, price: 505.00},
         {productName: "Barbell Plate Set", image: plates, category: "equipment", number: 1, price: 374.99}, 
-        {productName: "Compression Set (Black)", image: compression, category: "clothes", number: 1, price: 86.35}, 
+        {productName: "Compression Set", image: compression, category: "clothes", number: 1, price: 86.35}, 
         {productName: "Athlete Set (Pink)", image: redSet, category: "clothes", number: 1, price: 75.00}, 
         {productName: "Signature Lifting Belt", image: belt, category: "clothes", number: 1, price: 113.25}, 
         {productName: "Creatine Monohydrate", image: creatine, category: "supplements", number: 1, price: 55.00}, 
@@ -30,13 +29,17 @@ const ProductPage = ({ addToCart }) => {
     ];
     
     const [selectedCategory, setSelectedCategory] = useState("All");
-    const [showCheck, setShowCheck] = useState(false);
+    const [productIndex, setProductIndex] = useState(null);
 
-    const handleProdClick = () => {
-        setShowCheck(true);
+    const productsToLock = document.getElementById("root");
+
+    const handleProdClick = (index) => {
+        productsToLock.style.pointerEvents = "none";
+        setProductIndex(index);
         setTimeout(() => {
-            setShowCheck(false);
-        }, 750);
+            setProductIndex(null);
+            productsToLock.style.pointerEvents = "auto";
+        }, 1250);
     };
 
     useEffect(() => {
@@ -115,9 +118,9 @@ const ProductPage = ({ addToCart }) => {
             <div id="shopMeat">
                 <div id="productCon">
                     {filteredProducts.map((product, index) => {
-                        return <div className="productDivs" key={product.productName} onClick={() => handleProducts({product})}>
-                            <img src={product.image} alt={`Product ${index}`} className="productPics"/>
-                            <div id="iconIndicator" onClick={handleProdClick}>{showCheck ? (<AiOutlineCheckCircle className="plusCheckIcons"/>) : (<AiOutlinePlusCircle className="plusCheckIcons"/>)}</div>
+                        const isClicked = productIndex === index;
+                        return <div className="productDivs" key={product.productName} onClick={() => handleProducts({product}, handleProdClick(index))}>
+                            {isClicked ? (<AiOutlineCheckCircle className="productPics"/>) : (<img src={product.image} alt={`Product ${index}`} className="productPics"/>)}
                             <div className="productDesc">
                                 <div className="productName">{product.productName}</div>
                                 <div className="productPrice">${product.price.toFixed(2)}</div>
