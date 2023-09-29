@@ -1,4 +1,4 @@
-# [Try it here!](https://ironworks-fitness-demo.netlify.app/)
+# Try it [here!](https://ironworks-fitness-demo.netlify.app/)
 
 # Overview
 
